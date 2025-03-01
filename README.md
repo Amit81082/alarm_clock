@@ -1,4 +1,9 @@
 ![image](https://github.com/user-attachments/assets/05cff331-979a-48f2-a47f-5080f6a1db44)﻿# alarm_clock
+
+![image](https://github.com/user-attachments/assets/0e8bcd5b-1d2e-442c-bf33-147657591204)
+![image](https://github.com/user-attachments/assets/fd2af839-c0d8-4576-b202-ef54b934f514)
+
+
  # Alarm Clock ⏰  
 
 A simple **Alarm Clock** that lets you set an alarm and plays a sound when the time comes.  
