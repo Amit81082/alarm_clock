@@ -3,7 +3,7 @@
 
  # Alarm Clock ⏰  
 
- visite the website - https://amit81082.github.io/alarm_clock
+ visit the website - https://amit81082.github.io/alarm_clock
 
 A simple **Alarm Clock** that lets you set an alarm and plays a sound when the time comes.  
 
