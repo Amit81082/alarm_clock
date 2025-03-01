@@ -13,7 +13,8 @@ A simple **Alarm Clock** that lets you set an alarm and plays a sound when the t
 - **JavaScript's `setTimeout` or `setInterval`** for alarm functionality.  
 
 ## 📸 Screenshot  
-![Alarm Clock](image.png)  
+![Alarm Clock](![Uploading image.png…]()
+)  
 
 ## 📂 How to Use  
 1. Open `index.html` in a browser.  
