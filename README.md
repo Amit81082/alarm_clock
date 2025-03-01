@@ -29,5 +29,5 @@ A simple **Alarm Clock** that lets you set an alarm and plays a sound when the t
 This project is open-source. Feel free to **modify and improve** it!  
 
 ---
-*Made with ❤️ by [Your Name]*  
+*Made with ❤️ by [Amit Maurya]*  
 
