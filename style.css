@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    background: url('./image/HD-wallpaper-deep-blue-abej-beograd-love.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    transition: 0.3s;
+}
+
+body.light-mode {
+    background: url('./image/Desktop\ Pc\ Light.jpg') no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(1.2);
+    color: black;
+}
+
+.container {
+    margin: 5vh auto;
+    padding: 2vh;
+    max-width: 90%;
+}
+
+/* Responsive Font Sizes */
+.clock h1 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.clock p {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+}
+
+#toggle-mode {
+    border: none;
+    background: transparent;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.input-group {
+    margin-top: 20px;
+}
+
+.input-group select, .input-group button {
+    padding: 1vh;
+    font-size: clamp(0.8rem, 2vw, 1rem);
+    border: none;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Set Alarm Button */
+#set-alarm {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: bold;
+    padding: 1vh 2vh;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(255, 65, 108, 0.5);
+}
+
+#set-alarm:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(255, 65, 108, 0.8);
+}
+
+#set-alarm:active {
+    transform: scale(0.95);
+}
+
+#alarms-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3vh;
+    list-style: none;
+    padding: 0;
+}
+
+#alarms-list li {
+    margin-top: 1vh;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#alarms-list button {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Alarm Item */
+.alarm-item {
+    width: 80%;
+    max-width: 400px;
+    padding: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2vh;
+    box-shadow: 4px 4px 10px rgb(29, 29, 29);
+    transition: all 0.3s ease-in-out;
+}
+
+.alarm-item:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+/* Alarm Overlay */
+#alarm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+#stop-alarm {
+    background: radial-gradient(circle, #a64bf4, #6a0dad);
+    border: none;
+    color: white;
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    padding: 5vh;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(166, 75, 244, 0.5);
+}
+
+/* Hover पर wave effect */
+#stop-alarm::before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    top: 50%;
+    left: 50%;
+    background: rgba(166, 75, 244, 0.5);
+    transition: all 0.5s ease;
+    transform: translate(-50%, -50%) scale(0);
+    border-radius: 50%;
+}
+
+#stop-alarm:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+}
+
+/* Wave animation */
+@keyframes wave {
+    0% { box-shadow: 0 0 0 0 rgba(166, 75, 244, 0.8); }
+    50% { box-shadow: 0 0 40px 20px rgba(166, 75, 244, 0.5); }
+    100% { box-shadow: 0 0 80px 40px rgba(166, 75, 244, 0); }
+}
+
+#stop-alarm:hover {
+    animation: wave 1.5s infinite;
+}
+
+
+#snooze-alarm {
+    margin-top: 20px;
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
+    color: white;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    padding: 2vh 4vh;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0px 4px 10px rgba(30, 144, 255, 0.5);
+}
+
+#snooze-alarm:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 6px 15px rgba(30, 144, 255, 0.8);
+}
+
+#snooze-alarm:active {
+    transform: scale(0.95);
+}
+
+/* Toggle Switch Style */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    margin: 0 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+    transform: translateX(14px);
+}
+
+/* Trash Icon Button */
+.delete-alarm {
+    background: none;
+    border: none;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    cursor: pointer;
+    color: red;
+    margin-left: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        max-width: 98%;
+    }
+
+    .alarm-item {
+        width: 90%;
+    }
+}
