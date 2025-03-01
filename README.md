@@ -3,6 +3,8 @@
 
  # Alarm Clock ⏰  
 
+ visite the website - https://amit81082.github.io/alarm_clock
+
 A simple **Alarm Clock** that lets you set an alarm and plays a sound when the time comes.  
 
 ## 🚀 Features  
@@ -25,12 +27,7 @@ A simple **Alarm Clock** that lets you set an alarm and plays a sound when the t
 2. Set the alarm time using the input field.  
 3. Click on **"Set Alarm"**, and it will notify you when the time comes.  
 
-## 📌 Future Enhancements  
-- Add a **stop alarm button**.  
-- Customize alarm **tones and volume**.  
-
-## 📜 License  
-This project is open-source. Feel free to **modify and improve** it!  
+ 
 
 ---
 *Made with ❤️ by [Amit Maurya]*  
