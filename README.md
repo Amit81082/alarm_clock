@@ -27,7 +27,11 @@ A simple **Alarm Clock** that lets you set an alarm and plays a sound when the t
 2. Set the alarm time using the input field.  
 3. Click on **"Set Alarm"**, and it will notify you when the time comes.  
 
- 
+ ## 🔥 How to Clone and Run Locally
+
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/Amit81082/alarm_clock.git
 
 ---
 *Made with ❤️ by [Amit Maurya]*  
